@@ -11,13 +11,13 @@ public class Main {
         // Обработка события "Бой"
         ExperienceEvent battleEvent = new BattleExperienceEvent(150);
         player.handleExperienceEvent(battleEvent);
-        System.out.println("\nБой окончен!");
+        System.out.println("Бой окончен!");
         printPlayerInfo(player);
 
         // Обработка события "Задание"
         ExperienceEvent questEvent = new QuestExperienceEvent(80);
         player.handleExperienceEvent(questEvent);
-        System.out.println("\nЗадание завершено!");
+        System.out.println("Задание завершено!");
         printPlayerInfo(player);
     }
 
